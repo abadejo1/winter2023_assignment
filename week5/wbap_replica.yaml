@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: employees
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: webapp
-        image: 846767006554.dkr.ecr.us-east-1.amazonaws.com/mywebapp
+        image: 846767006554.dkr.ecr.us-east-1.amazonaws.com/mywebapp:v1.0
         ports:
         - containerPort: 8080
         env:
