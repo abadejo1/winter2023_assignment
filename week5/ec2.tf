@@ -54,7 +54,7 @@ resource "aws_key_pair" "k8s" {
   public_key = file("${path.module}/week5.pub")
 }
 
-  resource "aws_ecr_repository" "app" {
+resource "aws_ecr_repository" "app" {
   name                 = "mywebapp"
   image_tag_mutability = "MUTABLE"
 
