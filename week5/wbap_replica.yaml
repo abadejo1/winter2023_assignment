@@ -27,7 +27,7 @@ spec:
         - name: DBPORT
           value: "3306"
         - name: DBHOST
-          value: "3.239.23.117"
+          value: "10.244.0.5"
         - name: APP_COLOR
           value: "lime"
    
